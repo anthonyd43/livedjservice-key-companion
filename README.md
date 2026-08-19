@@ -1,4 +1,4 @@
-# Camelot Key Companion for LiveDJService
+# LDS Key Companion
 
 Chrome extension that shows the musical key next to every Camelot code on
 [livedjservice.com](https://livedjservice.com) — the key column reads `1B B`,

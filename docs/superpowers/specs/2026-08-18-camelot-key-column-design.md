@@ -1,4 +1,4 @@
-# Camelot Key Companion — Design
+# LDS Key Companion — Design
 
 **Date:** 2026-08-18
 **Status:** Approved

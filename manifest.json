@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Camelot Key Companion for LiveDJService",
+  "name": "LDS Key Companion",
   "version": "1.0.0",
   "description": "Shows the musical key (Mixed In Key style) next to every Camelot code on livedjservice.com.",
   "icons": {
