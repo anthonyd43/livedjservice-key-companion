@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Camelot Key Companion for LiveDJService",
+  "version": "1.0.0",
+  "description": "Shows the musical key (Mixed In Key style) next to every Camelot code on livedjservice.com.",
+  "content_scripts": [
+    {
+      "matches": ["*://livedjservice.com/*", "*://*.livedjservice.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

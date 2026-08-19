@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Camelot fixture</title>
+<link rel="stylesheet" href="../content.css">
+<style>
+  body { background: #16151a; color: #eee; font-family: sans-serif; }
+  .row { display: flex; gap: 2rem; padding: 8px 16px; }
+  .row > div { min-width: 6ch; }
+</style>
+</head>
+<body>
+  <div id="list">
+    <div class="row"><div class="title">Lane 8 — Road (NUZB Retrofuture Flip)</div><div class="bpm">123</div><div class="cam">1B</div><div class="dur">3:50</div></div>
+    <div class="row"><div class="title">Rufus — Innerbloom (Lane 8 Remix)</div><div class="bpm">124</div><div class="cam">6B</div><div class="dur">7:16</div></div>
+    <div class="row"><div class="title">Chris Lake — Psycho (Kvolx Remix)</div><div class="bpm">140</div><div class="cam">7A</div><div class="dur">2:10</div></div>
+    <div class="row"><div class="title">Westend — Surrender 12B Edit</div><div class="bpm">130</div><div class="cam">8A</div><div class="dur">4:26</div></div>
+    <div class="row"><div class="title">Gucci Mane — Trap House</div><div class="bpm">150</div><div class="cam">2A</div><div class="dur">1:48</div></div>
+    <div class="row"><div class="title">Whitespace cell</div><div class="bpm">128</div><div class="cam">  12A  </div><div class="dur">3:00</div></div>
+    <div class="row"><div class="title">Bad camelot</div><div class="bpm">100</div><div class="cam">13A</div><div class="dur">3:00</div></div>
+  </div>
+  <script src="../content.js"></script>
+  <script>
+    // Simulate the SPA inserting a row after load (MutationObserver path).
+    setTimeout(() => {
+      const row = document.createElement("div");
+      row.className = "row";
+      row.innerHTML = '<div class="title">Dynamic — Late Row</div><div class="bpm">126</div><div class="cam">11A</div><div class="dur">4:03</div>';
+      document.getElementById("list").appendChild(row);
+    }, 300);
+  </script>
+</body>
+</html>
