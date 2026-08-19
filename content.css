@@ -1,9 +1,14 @@
-.ldjs-key {
-  display: inline-block;
-  min-width: 3.5ch;
-  margin-left: 0.6em;
-  font-size: 0.85em;
-  opacity: 0.65;
-  text-align: left;
+[data-ldjs-key] {
   white-space: nowrap;
+}
+
+.ldjs-key {
+  margin-left: 0.35em;
+  color: #E9D502;
+  white-space: nowrap;
+}
+
+.ldjs-key::before {
+  content: "/ ";
+  color: inherit;
 }
