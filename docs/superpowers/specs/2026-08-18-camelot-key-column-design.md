@@ -72,4 +72,4 @@ never annotated.
 ## Deliverables
 
 `manifest.json`, `content.js`, `content.css`, `test/fixture.html`, `README.md`
-(load-unpacked instructions) in `~/Repositories/livedj-camelot-keys`.
+(load-unpacked instructions) in `~/Repositories/livedjservice-key-companion`.
