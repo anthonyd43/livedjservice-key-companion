@@ -28,3 +28,8 @@ redesigns.
 Open `test/fixture.html` over HTTP (e.g. `python3 -m http.server`) — it mimics
 the track list, includes decoy values (`13A`, a title containing `12B`), and
 inserts a row dynamically to exercise the observer.
+
+## Disclaimer
+
+Not affiliated with, endorsed by, or sponsored by LiveDJService.com. This is an
+independent tool that annotates key codes already shown on the page.
