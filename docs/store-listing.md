@@ -55,14 +55,27 @@ Not affiliated with, endorsed by, or sponsored by LiveDJService.com.
 
 ## Privacy tab answers
 
-Single purpose:
-Display the musical key equivalent of the Camelot codes shown on
-livedjservice.com track listings.
+Single purpose description:
+This extension has one function: on livedjservice.com track listings, it reads
+the Camelot key code already displayed for each track (for example 8A) and shows
+the equivalent musical key beside it (8A / Am). Camelot codes and musical keys
+are two notations for the same thing, so this is purely a display convenience for
+DJs who read keys rather than Camelot numbers. The extension does nothing else —
+no downloading, no account interaction, no modification of site behavior.
 
 Host permission justification:
-The content script runs on livedjservice.com to read the Camelot key codes
-rendered on track listings and display the equivalent musical key beside each
-one. No data is collected, stored, or transmitted.
+The extension needs to run a content script on livedjservice.com because that is
+the only site whose track listings display Camelot codes, and the codes must be
+read from the rendered page in order to annotate them in place. The script reads
+the text of elements containing a Camelot code and appends the corresponding
+musical key next to it. No data is collected, stored, or transmitted, and no
+other site is accessed. The match pattern is limited to livedjservice.com
+precisely because no broader access is needed.
+
+Are you using remote code?
+NO. Select "No, I am not using remote code." Verified: content.js contains no
+eval(), no new Function(), no dynamic import(), no fetch/XHR, no injected script
+tags, and no external URLs. All code ships inside the package.
 
 Data usage:
 Check nothing. Certify that the extension does not collect or use user data.
